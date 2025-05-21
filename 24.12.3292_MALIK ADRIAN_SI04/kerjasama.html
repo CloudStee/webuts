@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Formulir Kerjasama</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="header">
+    <h1>Formulir Penawaran Kerjasama</h1>
+  </div>
+
+  <div class="topnav">
+    <a href="index.html">Home</a>
+    <a href="kerjasama.html">Kerjasama</a>
+  </div>
+
+  <div class="container">
+    <form>
+      <input type="text" name="nama" placeholder="Nama Anda" required>
+      <input type="text" name="alamat" placeholder="Alamat Lengkap" required>
+      <input type="text" name="nowa" placeholder="Nomor WhatsApp" required>
+      <input type="email" name="email" placeholder="Email Aktif" required>
+
+      <div class="radio-group">
+        <label><input type="radio" name="jk" value="Laki-laki"> Laki-laki</label>
+        <label><input type="radio" name="jk" value="Perempuan"> Perempuan</label>
+      </div>
+
+      <label>Bidang Kerjasama</label>
+      <select name="bidang">
+        <option value="">- Pilih Bidang -</option>
+        <option>Mahasiswa</option>
+        <option>Web Dev</option>
+        <option>Fintech</option>
+      </select>
+
+      <label>Upload File Penawaran</label>
+      <input type="file" name="file">
+
+      <label>Tanggal Pelaksanaan</label>
+      <input type="date" name="tanggal">
+
+      <label>Domisili</label>
+      <select name="domisili">
+        <option>-- Pilih Domisili --</option>
+        <option>Yogyakarta</option>
+        <option>Jakarta</option>
+        <option>Lainnya</option>
+      </select>
+
+      <div style="display: flex; gap: 10px; margin-top: 10px;">
+        <button type="submit">Submit</button>
+        <button type="reset">Reset</button>
+      </div>
+    </form>
+  </div>
+
+  <div class="footer">
+    <p>Nama: Malik Adrian | NIM: 24.12.3292 | Kelas: SI04 | Tanggal Pengerjaan: 15 Mei 2025</p>
+  </div>
+</body>
+</html>
